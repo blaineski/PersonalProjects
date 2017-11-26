@@ -1,5 +1,7 @@
 # Personal Projects
 
+This is a space for personal coding projects and experimenting with different things
+
 [![GitHub contributors][contributors-image]][contributors-url]
 [![license][license-image]][license-url]
 
