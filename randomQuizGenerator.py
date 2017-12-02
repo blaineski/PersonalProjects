@@ -25,7 +25,9 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 # generate 35 quiz files
 for quizNum in range(35):
 
-    # TODO: create the quiz and answer files
+     # create the quiz and answer files
+     quizFile = open("capitalsquiz%s.txt" % (quizNum +1), "w")
+     answerKeyFile = open("capitalsquiz_answers%s.txt" % (quizNum + 1), "w")
 
     # TODO: write out the header for the quiz
 
