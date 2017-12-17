@@ -49,8 +49,15 @@ for quizNum in range(35):
         answerOptions = wrongAnswers + [correctAnswer]
         random.shuffle(answerOptions)
 
-        # TODO: write the question and answer options to the quiz file
+        # write the question and answer options to the quiz file
+        quizFile.write('%s. WHat is the capital of %s?\n' % (questionNum + 1,
+            states[questionNum]))
+        for i in range(4):
+            quizFile.write(' %s. %s\n' % ('ABCD'[i], answerOptions[i]))
+        quizFile.write('\n')
 
-        # TODO: write the answer key to a file
-
-        
+        # write the answer key to a file
+        answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[
+            answerOptions.index(correctAnswer)]))
+        quizFile.close()
+        answerKeyFile.close()
